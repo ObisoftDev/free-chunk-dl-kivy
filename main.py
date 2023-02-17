@@ -54,7 +54,7 @@ def sizeof_fmt(num, suffix='B'):
 def printl(text):
 	print(text,end='\r')
 
-def get_info(url,key='obisoftdev2023'):
+def get_info(url,key='obisoftdev'):
 	resp = requests.get(url,json={'key':key})
 	return json.loads(resp.text)
 
